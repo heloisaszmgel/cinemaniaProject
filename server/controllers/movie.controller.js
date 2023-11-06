@@ -54,14 +54,25 @@ module.exports = {
 
     updateMovie: (req, res) => {
         Movie.findOneAndUpdate(
-        { _id: req.params.id }, req.body,
-        { new: true, runValidators: true }
+            { _id: req.params.id }, req.body,
+            { new: true, runValidators: true }
         )
         .then(updatedMovie => {
             res.json({ movie: updatedMovie })
         })
         .catch((err) => {
-            res.json({ message: 'Something went wrong in update controllers', error: err })
+            if (err.name === 'ValidationError') {
+                const errors = {};
+                for (let field in err.errors) {
+                    errors[field] = err.errors[field].message;
+                }
+                if (!errors['rating']) {
+                    errors['rating'] = 'Rating is required and must be at least 1 star';
+                }
+                res.status(400).json({ message: 'Validation error', errors });
+            } else {
+                res.status(500).json({ message: 'Something went wrong in update controllers', error: err });
+            }
         })
 },
 

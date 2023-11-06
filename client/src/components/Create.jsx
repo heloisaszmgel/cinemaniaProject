@@ -61,8 +61,15 @@ const Create = () => {
             </div>
             <div className="form-group">
                 <label htmlFor="genre">Genre:</label>
-                <input type="text" name="genre" onChange={handleChange} className={`form-control ${errors.genre ? 'is-invalid' : ''}`}/>
-                {errors.genre && <div className="invalid-feedback">{errors.genre}</div>}
+                <select name="genre" onChange={handleChange} className={`form-select ${errors.genre ? 'is-invalid' : ''}`}>
+                    <option value="">Select a genre</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="sci-fi">Sci-fi</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                </select> {errors.genre && <div className="invalid-feedback">{errors.genre}</div>}
             </div>
             <div className="form-group">
                 <label htmlFor="rating">Rating:</label>
