@@ -31,7 +31,8 @@ export default StarRating;
 
 /* line 13: in the map function we generate a <span> element for each star. 
     it has a key prop set to starValue, which is necessary for react to efficiently update and re-render the list of stars.
-    it has a className that is set based on whether the current starValue is less than or equal to the rating, if it is, the 'active' class is applied, which indicates that the star should be highlighted. 
+    it has a className that is set based on whether the current starValue is less than or equal to the rating, if it is,
+    the 'active' class is applied, which indicates that the star should be highlighted. 
     it has an onClick handler that calls the onChange function with the starValue as an argument when the user clicks the star.
     &#x2606; represents the star symbol
 */
