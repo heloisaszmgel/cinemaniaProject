@@ -40,11 +40,12 @@ I created this project to combine my love for movies with my passion for softwar
 - Deploy the application for public use
 
 ---
-
 ## 🎬 Demo
 
-*Coming soon!*  
-A video walkthrough of the app is in the works.
+[![Watch the demo](https://youtu.be/WRxyb-3Q5cc)
+
+Click the image to watch the video demo!
+
 
 ---
 
