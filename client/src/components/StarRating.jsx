@@ -1,20 +1,16 @@
 import React from 'react';
 import './StarRating.css'
 
-// rating represents the current rating value
-// onChange represents the function that will be called when the user clicks on a star to change the rating
-// an array of 5 empty elements is created using Array(5).fill()
+/* rating represents the current rating value
+onChange represents the function that will be called when the user clicks on 
+a star to change the rating. An array of 5 empty elements is created using Array(5).fill()*/
 const StarRating = ({ rating, onChange }) => {
   const stars = Array(5)
     .fill()
     .map((element, index) => {
       const starValue = index + 1;
       return (
-        <span
-          key={starValue}
-          className={`star ${rating >= starValue ? 'active' : ''}`}
-          onClick={() => onChange(starValue)}
-        >
+        <span key={starValue} className={`star ${rating >= starValue ? 'active' : ''}`} onClick={() => onChange(starValue)}>
           &#x2606;
         </span>
       );
