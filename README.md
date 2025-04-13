@@ -42,10 +42,7 @@ I created this project to combine my love for movies with my passion for softwar
 ---
 ## 🎬 Demo
 
-[![Watch the demo](https://youtu.be/WRxyb-3Q5cc)
-
-Click the image to watch the video demo!
-
+[![Watch the demo][https://youtu.be/WRxyb-3Q5cc]
 
 ---
 
