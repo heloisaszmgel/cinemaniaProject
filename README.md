@@ -39,10 +39,12 @@ I created this project to combine my love for movies with my passion for softwar
 - Use an external API to fetch movie data and details
 - Deploy the application for public use
 
----
-## 🎬 Demo
+---#
 
-- Watch the demo [https://youtu.be/WRxyb-3Q5cc]
+# 🎬 Demo
+
+- [Watch the demo](https://youtu.be/WRxyb-3Q5cc)
+
 
 ---
 
